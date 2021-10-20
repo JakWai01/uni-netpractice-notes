@@ -175,6 +175,7 @@
 <li><a href="#traceroute-mtr"><span class="toc-section-number">1.3.6</span> Traceroute &amp; MTR</a></li>
 <li><a href="#ss"><span class="toc-section-number">1.3.7</span> SS</a></li>
 <li><a href="#route"><span class="toc-section-number">1.3.8</span> Route</a></li>
+<li><a href="#nmap"><span class="toc-section-number">1.3.9</span> Nmap</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -1478,5 +1479,23 @@ Connecting to host 141.62.66.5, port 5201
 
 iperf Done.</code></pre>
 <p>Hier kann z.B. erkannt werden, dass ca. 850 Mbits/sec erreicht werden können, was für die verwendete Gigabit-Netzwerkkarte mit CAT-5e-Kabel zu erwarten ist.</p>
+<h3 data-number="1.3.9" id="nmap"><span class="header-section-number">1.3.9</span> Nmap</h3>
+<p><code>Nmap</code> ist die Kurzform für Network Mapper. Mit diesem kann man Ports scannen, Informationen über die Services bekommen (Version, Betriebsystem etc.) und vorinstallierte als auch eigene Skripts verwenden.</p>
+<p>Es gibt verschiedene Möglichkeiten Scans durchzuführen, der gängige (auch default) ist der <code>TCP Connect Port Scan</code>. Es gibt noch weitere, welche situativ über Flags verwendet werden können:</p>
+<pre class="plaintext"><code>-sS   TCP SYN Port Scan
+-sA   TCP ACK Port Scan
+-sU   UDP Port Scan</code></pre>
+<p>Es besteht die Möglichkeit mehrere IPs zu scannen, ebenso wie ein Bereich von IPs, eine einzige IP oder eine Domain:</p>
+<pre class="shell"><code>$ nmap 10.10.247.15                   # Scannen einer einzigen IP
+$ nmap 10.10.247.15 10.10.247.240     # Scannen mehrerer IPs
+$ nmap 10.10.247.15-240               # Scannen des Bereichs von .15-.240
+$ nmap scanme.nmap.org                # Scannen der Domain scanme.nmap.org</code></pre>
+<p>Es lassen sich ebenfalls die Ports definieren, welche auf einer IP gescannt werden sollen:</p>
+<pre class="shell"><code>$ nmap 10.10.247.15 -p-               # Scannen der gesamten Portrange
+$ nmap 10.10.247.15 -p 21             # Scannen des Port 21
+$ nmap 10.10.247.15 -p 21-200         # Scannen alle Ports von 21 bis 200</code></pre>
+<p>Um Informationen bezüglich der verwendeten Versionen und Betriebssysteme zu erhalten können folgende Flags verwendet werden:</p>
+<pre class="shell"><code>$ nmap 10.10.247.15 -sV               # Versucht die Version des Services zu ermitteln
+$ nmap 10.10.247.15 -O                # Versucht das Betriebsystem zu ermitteln</code></pre>
 </body>
 </html>
