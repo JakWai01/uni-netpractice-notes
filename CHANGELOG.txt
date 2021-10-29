@@ -1,3 +1,9 @@
+commit 930b7ee8faa4ede39df6edfb612ff5e6693d171f
+Author: JakWai01 <jakob.waibel@web.de>
+Date:   Fri Oct 29 15:44:02 2021 +0200
+
+    fix: Formatting and pictures
+
 commit bf3265d943df5a63bd9be1d0cfcb564741b852ea
 Author: JakWai01 <jakob.waibel@web.de>
 Date:   Fri Oct 29 14:17:20 2021 +0200
