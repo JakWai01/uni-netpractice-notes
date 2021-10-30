@@ -1,3 +1,17 @@
+commit b39ea08e33018daa3ae13dcf4fc9620bf302a808
+Author: JakWai01 <jakob.waibel@web.de>
+Date:   Sat Oct 30 13:28:42 2021 +0200
+
+    fix: Revert qr code changes
+
+commit c0cef536f26b29680d7146a1740bb36ab09057f6
+Author: JakWai01 <jakob.waibel@web.de>
+Date:   Sat Oct 30 13:26:34 2021 +0200
+
+    Revert "fix: Update date"
+    
+    This reverts commit fd7b7a87a0220b33447edfccd37c8cfe63494bb6.
+
 commit fd7b7a87a0220b33447edfccd37c8cfe63494bb6
 Author: JakWai01 <jakob.waibel@web.de>
 Date:   Sat Oct 30 10:51:21 2021 +0200
