@@ -1,3 +1,9 @@
+commit a67dd6417eca547c0e3ddf325f75715206d78a96
+Author: JakWai01 <jakob.waibel@web.de>
+Date:   Tue Nov 2 18:32:41 2021 +0100
+
+    feat: Add template for 3rd experiment
+
 commit 07bdba2264c29fcc589aa38c88e3a14b2028955a
 Merge: b9acf3e b39ea08
 Author: Felix Pojtinger <felix@pojtinger.com>
