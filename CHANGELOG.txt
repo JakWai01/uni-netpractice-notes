@@ -1,3 +1,9 @@
+commit 0fa712eded561b7d76aad661f37a0250140bd28d
+Author: JakWai01 <jakob.waibel@web.de>
+Date:   Wed Nov 3 10:23:10 2021 +0100
+
+    feat: Work on adding task 2 to the protocol
+
 commit 488eec3a1d1db2cc85d5ba125aa9afbbfe7b78b7
 Author: JakWai01 <jakob.waibel@web.de>
 Date:   Tue Nov 2 21:21:40 2021 +0100
