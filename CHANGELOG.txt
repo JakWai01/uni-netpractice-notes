@@ -1,3 +1,44 @@
+commit 3a5f5f0da60ccab5e1ed4239b9a904cad8b502cd
+Merge: 72cf22c 21674a8
+Author: Jakob Waibel <59575534+JakWai01@users.noreply.github.com>
+Date:   Fri Nov 5 12:56:27 2021 +0100
+
+    Merge pull request #1 from dentremor/main
+    
+    feat: Finish task 1 with two remaining todos
+
+commit 21674a839f42575410754f988459d36dd1a7b711
+Merge: 63f6858 6d25b6a
+Author: dentremor <hillerdaniel11@gmail.com>
+Date:   Fri Nov 5 12:43:41 2021 +0100
+
+    Merge branch 'main' of https://github.com/dentremor/uni-netpractice-notes
+
+commit 63f6858c463ac198a1e9d6c9b120efddc338cfe9
+Author: dentremor <hillerdaniel11@gmail.com>
+Date:   Fri Nov 5 12:43:14 2021 +0100
+
+    fix: Add a description to the images from task 1
+
+commit 6d25b6acc5c75049d652f9ff375195f649902d75
+Merge: 97809db 72cf22c
+Author: Daniel Hiller <48788571+dentremor@users.noreply.github.com>
+Date:   Fri Nov 5 12:33:59 2021 +0100
+
+    Merge branch 'main' into main
+
+commit 97809db1cf74d8bd1f5c4f530d9e83b49b6877dc
+Author: dentremor <hillerdaniel11@gmail.com>
+Date:   Fri Nov 5 12:32:08 2021 +0100
+
+    fix: Add a description to the images from task 1
+
+commit d0adb4f197022e54da58664101f63da501bd9b22
+Author: dentremor <hillerdaniel11@gmail.com>
+Date:   Fri Nov 5 12:13:00 2021 +0100
+
+    feat: Finish task 2 with two remaining todos
+
 commit 72cf22c1aff46bdc69186a3a0778cd34811bb884
 Author: JakWai01 <jakob.waibel@web.de>
 Date:   Fri Nov 5 10:45:25 2021 +0100
