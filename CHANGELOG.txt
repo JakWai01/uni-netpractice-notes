@@ -1,3 +1,9 @@
+commit 6446d6c0ea36da3e4f09c369dfd8b72e6cc6a7e8
+Author: JakWai01 <jakob.waibel@web.de>
+Date:   Fri Nov 5 15:01:08 2021 +0100
+
+    feat: Update task 1
+
 commit 3a5f5f0da60ccab5e1ed4239b9a904cad8b502cd
 Merge: 72cf22c 21674a8
 Author: Jakob Waibel <59575534+JakWai01@users.noreply.github.com>
