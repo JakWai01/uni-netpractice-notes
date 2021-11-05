@@ -1,3 +1,9 @@
+commit 8b81de154f8c4a63f9c67830421a3c4e3617859f
+Author: JakWai01 <jakob.waibel@web.de>
+Date:   Fri Nov 5 10:29:25 2021 +0100
+
+    feat: Finish first draft of Task 2 + Installation instructions
+
 commit 0a3eabd0d20d1ff3be23da009b521b0b5ad07300
 Author: JakWai01 <jakob.waibel@web.de>
 Date:   Wed Nov 3 16:26:45 2021 +0100
