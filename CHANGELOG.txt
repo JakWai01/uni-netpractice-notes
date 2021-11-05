@@ -1,3 +1,9 @@
+commit 72cf22c1aff46bdc69186a3a0778cd34811bb884
+Author: JakWai01 <jakob.waibel@web.de>
+Date:   Fri Nov 5 10:45:25 2021 +0100
+
+    fix: Typos
+
 commit 8b81de154f8c4a63f9c67830421a3c4e3617859f
 Author: JakWai01 <jakob.waibel@web.de>
 Date:   Fri Nov 5 10:29:25 2021 +0100
