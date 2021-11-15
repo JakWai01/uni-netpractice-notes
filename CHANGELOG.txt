@@ -1,3 +1,30 @@
+commit 18dd45062697cf1d75f626f295f6d190275cc217
+Author: Felix Pojtinger <felix@pojtinger.com>
+Date:   Sun Nov 14 21:48:16 2021 +0100
+
+    feat: Add update wireshark results
+
+commit 39716ac1b899c672278fd4c96e31130a6888f2ef
+Author: Felix Pojtinger <felix@pojtinger.com>
+Date:   Sun Nov 14 21:13:46 2021 +0100
+
+    docs: Add Linux sections on IPv6 privacy extensions
+
+commit f5e347aa43f214401eed3c37ebbbb60c76e8cebd
+Author: Felix Pojtinger <felix@pojtinger.com>
+Date:   Sun Nov 14 20:36:00 2021 +0100
+
+    fix: Use block formatting for pictures
+
+commit 1fa8a3ef42af5ededfad040e571a9d109fdb14c7
+Merge: 4274433 b94fe05
+Author: Felix Pojtinger <felix@pojtinger.com>
+Date:   Sat Nov 13 16:19:33 2021 +0100
+
+    Merge pull request #6 from JakWai01/main
+    
+    feat: Finished 8 TODOs
+
 commit b94fe05080076382d1aa9e67e0f7fdad5454a583
 Author: JakWai01 <jakob.waibel@web.de>
 Date:   Sat Nov 13 09:52:27 2021 +0100
