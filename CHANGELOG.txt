@@ -1,3 +1,9 @@
+commit c6301a6648501faf0b3a8415bd0ca2ca625530ed
+Author: JakWai01 <jakob.waibel@web.de>
+Date:   Tue Nov 16 16:47:13 2021 +0100
+
+    feat: Add final script
+
 commit fd53d3b04150ae7e4b47d84330ba6d3f75604712
 Author: Felix Pojtinger <felix@pojtinger.com>
 Date:   Tue Nov 16 16:32:10 2021 +0100
