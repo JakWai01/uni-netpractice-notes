@@ -1,3 +1,9 @@
+commit 0ed12666a8e7bf363effda390b29c1d5e8f1eee7
+Author: JakWai01 <jakob.waibel@web.de>
+Date:   Sun Jan 2 21:52:00 2022 +0100
+
+    feat: Finish 9 TODOs
+
 commit 44baada51e1034cb8d599f5df2391f3c7e041430
 Author: Felix Pojtinger <felix@pojtinger.com>
 Date:   Tue Dec 21 17:35:10 2021 +0100
