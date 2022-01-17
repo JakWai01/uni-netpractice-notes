@@ -63,7 +63,10 @@ Nutzen Sie den Befehl snmpwalk, um zu ergründen auf welchem Switchport
 welche Einheit handelt es sich? Auf welchem Switchport war bisher
 offensichtlich kein PC angesteckt?
 
-TODO: Add interpretation
+Verwendet wurde ifInOctets bzw. ifOutOctets, was die Anzahl an
+empfangenen bzw. gesendeten Oktets (Bytes) beschreibt; auf den Ports, an
+welchen kein Traffic stattfindet, ist offensichtlich kein PC
+eingesteckt.
 
 141.62.66.215 war zum Zeitpunkt der Versuchsdurchführung nicht
 erreichbar.
@@ -74,7 +77,7 @@ erreichbar.
 
 Welche „Geschwindigkeiten“ (10, 100, 1000 Mbit/s) haben die Interfaces
 derzeit jeweils und warum? Was ist das besondere bei Port 25 auf Switch
-141.62.66.215 ? (Hinweis: ifSpeed vs. ifHighSpeed)
+141.62.66.215? (Hinweis: ifSpeed vs. ifHighSpeed)
 
 [Ergebnis der Abfrage auf 141.62.66.213]
 
@@ -84,7 +87,10 @@ derzeit jeweils und warum? Was ist das besondere bei Port 25 auf Switch
 
 [Ergebnis der ifHighSpeed Abfrage auf 141.62.66.215]
 
-TODO: Add interpretation
+-   Port 2 auf 141.62.66.215: 10 Mbit/s
+-   Port 24 auf 141.62.66.215: 100 Mbit/s
+-   Port 25 auf 141.62.66.213, 141.62.66.214: 10 Gigabit/s
+-   Restliche Ports: 1 Gigabit/s
 
 Welche Geräte sind auf welchen Ports (141.62.66.213 oder .214, .215)
 angeschlossen (Hinweis: ifAlias)?
@@ -174,7 +180,7 @@ Setzen Sie mit snmpset einen beliebigen Switchport auf disable
 
 Mit
 ./snmpset.exe -v 2c -c public 141.62.66.81 IF-MIB::ifAdminStatus.7 i 2
-deaktivieren wir einen der Switchports. Der Wert 2 kann zum deaktivieren
+deaktivieren wir einen der Switchports. Der Wert 2 kann zum Deaktivieren
 verwendet werden. Der Wert 1 aktiviert den Switchport wieder.
 
 Wie wir im Screenshot sehen können, hat sich der Status des Ports auf
@@ -303,7 +309,10 @@ konfiguriert)]
 Vergleichen Sie die beiden Tools Prometheus/grafana und munin. Welche
 Vor und Nachteile sehen sie jeweils?
 
-TODO: Add answer
+Bei Prometheus/grafana ist die UI etwas ansprechender und
+konfigurierbar. Das älter aussehende Munin ist nur in der CLI
+konfigurierbar. Es gibt dort bereits einige Grafen zu Themen wie Traffic
+und Errors. In grafana hätte man diese selbst konfigurieren müssen.
 
 LibreNMS
 
@@ -333,7 +342,15 @@ Bezeichnungen der Ethernet-Ports für Ihre Windows-Maschine?
 
 [Abfrage der Netzwerkinterfaces des Windows-Host über LibreNMS]
 
-TODO: Add interpretation of network interface names
+-   loopback_5: Ein Pseudo-Interface, über welches sich das System
+    selbst kontaktieren kann (auf Linux: lo)
+-   tunnel_*: Windows-Äquivalent eines TAP- oder TUN-Device, mittels
+    welchem z.B. VPNs realisiert werden können (auf Linux: tapX/tunX);
+    da mehrere solcher Adapter vorhanden sind, sind wohl mehrere Tunnel
+    vorhanden
+-   ethernet_*: Ethernet-Adapter (auf Linux: enpXsX); da mehrere solcher
+    Adapter vorhanden sind, sind wohl mehrere Netzwerkkarten verbaut
+-   ppp_*: Ein Point-to-Point-Protokoll-Adapter (auf Linux: pppX)
 
 Welche Erkenntnisse ziehen Sie aus den Angaben zu STP und Neighbours
 bzgl. Ihres HP 2530-Switch, nachdem Sie ihn hinzugefügt haben?
@@ -355,7 +372,18 @@ bzgl. Ihres HP 2530-Switch, nachdem Sie ihn hinzugefügt haben?
 
 [Ports zu STP LibreNMS]
 
-TODO: Add interpretation on STP and neigbors
+Zu STP kann erkannt werden:
+
+-   Ob der Switch die Root-Bridge ist
+-   MAC-Adresse der Bridge
+-   Verwendete Protokollspezifikation
+-   Priorität
+-   Zeit, seitdem sich zuletzt die Topologie geändert hat
+-   MAC-Adresse des Roots
+-   Performance- und Latenzdaten wie Hello Time etc.
+
+Bzgl. der Neighbors kann aus dem Graph entnommen werden, dass die Node
+151.62.66.1 im selben Netz ist.
 
 Fügen Sie den Switch 141.62.66.215 zu LibreNMS hinzu. Kontrollieren Sie
 den Port 25 (A1) auf Switch 141.62.66.215. Wie ist die Angabe des
@@ -374,7 +402,7 @@ den Port 25 (A1) auf Switch 141.62.66.215. Wie ist die Angabe des
 
 [Speed an Port A1]
 
-TODO: Add interpretation (10 Gigabit)
+Der Port 25 (Port A1) ist ein 10-Gigabit-Port.
 
 Fügen Sie Device 141.62.66.241 hinzu. Wozu dient das Device?
 
@@ -414,4 +442,5 @@ Fügen Sie Device 141.62.66.241 hinzu. Wozu dient das Device?
 
 [Device info in LibreNMS]
 
-TODO: Add interpretation (socket strip)
+Aus dem Systennamen “brennenstuhlpdu” lässt sich schließen, dass es sich
+um eine Steckdosenleiste des Herstellers Brennenstuhl handelt.
