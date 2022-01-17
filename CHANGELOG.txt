@@ -1,3 +1,9 @@
+commit e06da9924c7118bea1e514c114ab4ed89c2467ce
+Author: JakWai01 <jakob.waibel@web.de>
+Date:   Mon Jan 17 21:27:13 2022 +0100
+
+    fix: Typos
+
 commit 6910b7c5a8a55b10251fe302ed237c96260c542d
 Author: Felix Pojtinger <felix@pojtinger.com>
 Date:   Mon Jan 17 20:46:25 2022 +0100
